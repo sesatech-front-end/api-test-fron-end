@@ -8,8 +8,8 @@ app.use(express.json())
 
 app.use(cors({ credentials: true, origin: 'http://localhost:3000' }))
 
-const UsersRoutes = require('./routes/UserRoutes')
-app.use('/', UsersRoutes)
+const Routes = require('./routes/Routes')
+app.use('/', Routes)
 
 app.listen(port, () => {
   console.log(`Server rodando na porta:${port}`)
