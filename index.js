@@ -6,7 +6,7 @@ const app = express()
 
 app.use(express.json())
 
-app.use(cors({ credentials: true, origin: 'http://localhost:3000' }))
+app.use(cors({ credentials: true, origin: 'http://localhost:8080' }))
 
 const Routes = require('./routes/Routes')
 app.use('/', Routes)
